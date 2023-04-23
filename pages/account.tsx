@@ -129,6 +129,15 @@ export default function Account({ user }: { user: User }) {
           </div>
         </Card>
         <Card
+          title="Your Email"
+          description="Please enter the email address you want to use to login."
+          footer={<p>We will email you to verify the change.</p>}
+        >
+          <p className="text-xl mt-8 mb-4 font-semibold">
+            {user ? user.email : undefined}
+          </p>
+        </Card>
+        <Card
           title="Your API Key"
           description="Please keep your API key safe. You can use it to access the API."
           footer={<p>See Docs page for usage instructions.</p>}
@@ -142,15 +151,6 @@ export default function Account({ user }: { user: User }) {
               </div>
             )}
           </div>
-        </Card>
-        <Card
-          title="Your Email"
-          description="Please enter the email address you want to use to login."
-          footer={<p>We will email you to verify the change.</p>}
-        >
-          <p className="text-xl mt-8 mb-4 font-semibold">
-            {user ? user.email : undefined}
-          </p>
         </Card>
       </div>
     </section>

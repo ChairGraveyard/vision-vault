@@ -1,17 +1,6 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
-
-class Docs extends Document {
-  render() {
-    return (
-      <Html lang="en">
-        <Head />
-        <body className="loading">
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
+function Docs() {
+    return <div>Docs</div>
   }
-}
-
-export default Docs;
+  
+  export default Docs
+  
