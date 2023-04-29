@@ -8,6 +8,7 @@ create table users (
   full_name text,
   avatar_url text,
   api_key uuid default uuid_generate_v4() not null unique,
+  usage_dollar decimal default 0,
   -- The customer's billing address, stored in JSON format.
   billing_address jsonb,
   -- Stores your customer's payment instruments.
